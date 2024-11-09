@@ -1,0 +1,12 @@
+# Directorios de compilación
+bin/
+obj/
+
+# Archivos de configuración
+appsettings.Development.json
+appsettings.json
+
+# Archivos del sistema
+.vs/
+.vscode/
+.idea/
