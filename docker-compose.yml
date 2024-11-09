@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: bianca
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: PollsDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
